@@ -1,5 +1,4 @@
 from flask import Blueprint, request, jsonify
-from app.models.event import Event
 from app.services.in_memory import redis_client
 
 events_bp = Blueprint("events", __name__)
