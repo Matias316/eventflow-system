@@ -40,10 +40,11 @@ A backend API service for scheduling, managing, and notifying events. Designed t
 - Poetry
 - PostgreSQL, Redis, RabbitMQ
 
-### How to Install dependencies (Poetry)
+### How to Install and run locally (Poetry)
 
 ```bash
 poetry install
+poetry run flask run
 ```
 
 ### How to Build and Run (Docker)
@@ -56,4 +57,5 @@ docker-compose up --build
 
 ```bash
 poetry run pytest
+poetry run pytest --cov=app --cov-report=term --cov-report=html
 ```
